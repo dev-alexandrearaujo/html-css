@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/*Anotações sobre identificadores:
+    em HTML e CSS o 'id' = '#'  (apenas um elemento)
+    em HTML e CSS o 'class' = '.'  (vários elementos)
+
+*/
+body{
+    background-color: #ADF5B8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #425c46;
+}
+/*Pode ser escrito também apenas #principal*/
+h1#principal {
+    text-align: center;
+    color: white;
+    background-color: #263628;
+}
+h2{
+    color: #5b8160;
+}
+.basico{
+    color: rgb(201, 187, 2);
+}
+.inter{
+    color: orange;
+}
+.avanc{
+    color: red;
+}
+.destaque{
+    background-color: rgba(255, 255, 0, 0.507);
+}

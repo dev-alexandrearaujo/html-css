@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando <strong><code>document.getElementbyID</code></strong>('teste') é escrito em linguagem javascript. <br>Para ler melhor um código em uma fonte monoespaçada sem indentação, utilizamos a tag &lt;CODE&gt;</p>
+    <p>Para que ocorra a indentação, separando as linhas e espaços corretamente, utilizamos a tag &lt;PRE&gt; </p>
+    <PRE>
+        <CODE>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é IMPAR')
+    print('Fim do programa')
+        </CODE>
+    </PRE>
+    <h2>Citações</h2>
+    <p><I><Q>Como diria o pai de um amigo: o computador é um burro muito rápido</Q></I>,  para citações utilizamos a tag &lt;Q&gt;</p>
+    <H2>Citações completas</H2>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos, utilizamos a tag &lt;blackquote&gt; e &lt;cite&gt;:</p>
+    <i>
+        <blockquote cite="https://www.google.com.br....">
+            A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto
+            <!-- Internamente nesta citação podemos colocar o "cite" para referenciar o site de referência interna -->
+        </blockquote>
+    </i>
+    <h2>Abreviação</h2>
+    <p>Estou estudando <ABBR title="Hypertext Markup Language">HTML</ABBR> e <abbr title="Cascading Style Sheets
+    ">CSS</abbr>. Estou adorando!</p>
+    <p>Neste caso utilizamos a tag &lt;ABBR&gt;</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo>, neste caso utilizamos a tag &lt;BDO&gt;</p>
+</body>
+</html>

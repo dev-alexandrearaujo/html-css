@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem</title>
+</head>
+<body>
+    <h1>Teste de imagem flexível</h1>
+    <p>Teste de imagem com os comandos &lt;source media&gt;</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="foto/foto-crop.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="foto/foto-media.png" type="image/png">
+        <img src="foto/foto-grande.png" alt="foto teste">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <h2>Primeira opção: &lt;audio&gt; + controls autoplay</h2>
+    <p>Vamos aprender a reproduzir audios</p> <!-- Formatos compatíveis: MP3,  WAV,  OGG-->
+    <audio src="media/plain_truth.mp3" controls autoplay></audio>
+
+    <h2>Segunda opção: utilizando  &lt;audio&gt; e  &lt;source&gt;</h2>
+    <audio preload="metadata" autoplay controls>
+        <source src="media/plain_truth.mp3" type="audio/mpeg">
+        <source src="media/plain_truth.ogg" type="audio/ogg">
+        <source src="media/plain_truth.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir este audio <a href="media/plain_truth.mp3"> Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>

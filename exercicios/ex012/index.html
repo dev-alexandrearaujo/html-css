@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Vídeos hospedados localmente</h1>
+    <p>Este video está hospedado no meu próprio servidor</p>
+    <p>A desvantagem desta modalidade é que consome hospedagem de dados</p>
+
+    <video width="560" controls autoplay poster="imagens/R.jpeg">
+        <source src="media/Video MP4.mp4" type="video/mp4">
+        <source src="media/Video M4V.mkv" type="video/mp4">
+        <source src="media/Video WEBM.webm" type="video/webm">
+        <source src="media/Video OGV.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de video.</p>
+    </video>
+
+    <h1>Video hospedado no Youtube</h1>
+    <p>Este vídeo foi hospedado diretamente no youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Vídeo hospedado no Vimeo</h1>
+    <p>Este vídeo foi hospedado diretamente no Vimeo</p>
+    <iframe src="https://player.vimeo.com/video/397116139?h=87dce4182f&autoplay=1&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; loop; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
