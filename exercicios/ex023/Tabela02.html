@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+
+    tbody > tr:nth-child(2n){  /*esse "nth-child ()" faz o efeito zebrado, e o (2n) é o intervalo  || ao inves de xn pode escrever odd/even também*/
+        background-color: lightgray;
+    }
+    table{
+        width: 450px;
+        text-align: left;
+        border-collapse: collapse;
+        position: relative; /*Esta informação foi inserida para criar um cabeçalho móvel ao rolar a tela*/
+    }
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+    }
+    thead{
+        background-color: rgb(78, 78, 78);
+        color: white;
+    }
+    thead > tr > th{ /* Dentro de THEAD na linha TR em TH */
+        /*Esta informação foi inserida para criar um cabeçalho móvel ao rolar a tela*/
+        position: sticky;
+        top: 0;
+        background-color: rgb(78, 78, 78);
+    }
+    td, th{
+        border: 1px solid black;
+        padding: 10px;
+    
+        
+    }
+    tfoot{
+        background-color: rgb(215, 142, 17);
+        font-weight: bold;
+    }
+    td.numero{
+        text-align: right;
+    }
+    td.total{
+        text-align: left;
+    }
+</style>
+<body>
+    <h1>Uso de tabelas grandes</h1> 
+    <!--ANATOMIA PARA TABELAS GRANDES
+    TABLE
+        CAPTION
+        THEAD - TR, TD, TH
+        TBODY - TR, TD, TH
+        TFOOT - TR, TD, TH
+    -->
+
+    <!--REPLICANDO UMA TABELA DO WIKIPEDIA
+    https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_população-->
+
+    <Table>
+        <caption>População das unidades fererativas</caption>
+        <Thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </Thead>
+        <tbody>
+                
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46.024.93</td>
+                
+            </tr>        
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20.732.660</td>
+            </tr>
+            
+            <td>Rio de Janeiro</td>
+            <td class="numero">16.615.526</td>	
+
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14.659.023</td>
+            </tr>	
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11.835.379</td>
+            </tr>	
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11.088.065</td>
+            </tr>	
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9.051.113</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">8.936.431</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">8.442.962</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">7.762.154</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="numero">6.950.976</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="numero">6.800.605</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="numero">4.108.508</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="numero">4.030.961</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">3.952.262</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="numero">3.784.239</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="numero">3.303.953</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="numero">3.270.174</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="numero">3.125.254</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="numero">2.923.369</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="numero">2.833.742</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="numero">2.211.868</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="numero">1.616.379</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="numero">1.584.306</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="numero">829.780</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="numero">774.268</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="numero">634.805</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="total">Total de habitantes</td>
+                <td class="numero"><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
+    </Table>
+</body>
+</html>
