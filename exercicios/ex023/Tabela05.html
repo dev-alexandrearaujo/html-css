@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabela</title>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+        border-collapse: collapse;
+        width: 800px;
+    }
+    caption{
+        font-size: 1.3em;
+        font-weight: bolder;
+        padding: 8px;
+    }
+    th, td{
+        border: 1px solid black;
+        padding: 8px;
+    }
+    tr.destaque{
+        background-color:greenyellow;
+    }
+    col.cnome{
+        background-color: yellow;
+    }
+    div#container{
+        overflow-x: auto; /*Utilize este recurso 'overflow' para limitar a rolagem da tela apenas em tabelas*/
+    }
+</style>
+</head>
+<body>
+    <h1>Exercicio da tabela</h1>
+    <div id="container">
+        <table>
+            <colgroup> <!-- Este agrupamento é usado para destacar uma coluna-->
+                <col class="cnome">
+                <col class="csexo">
+                <col class="cidade">
+                <col class="cprof">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+                <th scope="col">peso</th>
+                <th scope="col">altura</th>
+                <th scope="col">nota</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+                <td>55</td>
+                <td>1.6</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Claudio</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Programador</td>
+                <td>80</td>
+                <td>1.85</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>42</td>
+                <td>Professor</td>
+                <td>65</td>
+                <td>1.7</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Hélio</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Vendedor</td>
+                <td>95</td>
+                <td>1.8</td>
+                <td>7.5</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>39</td>
+                <td>Médica</td>
+                <td>50</td>
+                <td>1.65</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Otávio</td>
+                <td>M</td>
+                <td>22</td>
+                <td>Nutricionista</td>
+                <td>78</td>
+                <td>1.8</td>
+                <td>9</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

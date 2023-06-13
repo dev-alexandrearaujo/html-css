@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="PT-BT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABELAS</title>
+<style>
+    table{
+        font-family: Arial, Helvetica, sans-serif;
+        width: 300px;
+        border-collapse: collapse;
+    }
+    td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;    
+
+    }
+</style>
+</head>
+<body>
+    <h1>Mesclagem de células</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td> <!-- Utilizamos colspan para que a celula ocupe 2 colunas-->
+            <td rowspan="2">D</td>
+        </tr>
+        <tr>
+            <td rowspan="2">E</td>
+            <td>F</td>
+
+        </tr>
+        <tr>
+            <td colspan="3">I</td>
+        </tr>
+    </table>
+</body>
+</html>
