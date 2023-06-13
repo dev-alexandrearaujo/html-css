@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Tabela</title>
+    <style>
+        table {
+            width: 800px;
+            border-collapse: collapse;
+        }
+        
+        th{
+            border: 1px solid black;
+            padding: 0px;
+        }
+        
+        td {
+            
+            border: 1px solid black;
+            padding: 12px;
+            
+        }
+        
+        input {
+            width: 100%;
+        }
+        .button-container{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Tabela</h1>
+    <form id="myForm">
+        <div class="button-container">
+            <button type="button" onclick="addItem()">Adicionar</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Cavalo</th>
+                    <th>Carreta</th>
+                    <th>Viagem</th>
+                    <th>Destino</th>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

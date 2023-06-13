@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Lista</title>
+    <style>
+        body{
+            background-color: rgb(197, 197, 197);
+ 
+        }    
+
+        ul {
+            list-style-type: none
+            
+        }
+        
+        li {
+            
+        
+        }
+        
+        .input-container {
+            display:;
+            gap: 1px;
+            white-space:nowrap;
+            
+        }
+        
+        .input-container input {
+            width: 120px;
+            border-collapse: collapse;
+
+        }
+
+        #input1{
+            width: 200px;
+        }
+        
+        .button-container {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Lista</h1>
+    <form id="myForm">
+        <div class="button-container">
+            <button type="button" onclick="addItem()">Adicionar</button>
+        </div>
+
+        <div class="input-container">
+            <input type="text" id="input1" placeholder="Motorista">
+            <input type="text" id="input2" placeholder="Cavalo">
+            <input type="text" id="input3" placeholder="Carreta">
+            <input type="text" id="input4" placeholder="Viagem">
+            <input type="text" id="input5" placeholder="Destino">
+        </div>
+
+    </form>
+    <ul id="myList">
+    </ul>
+
+    <script src="script lista.js"></script>
+</body>
+</html>
+
